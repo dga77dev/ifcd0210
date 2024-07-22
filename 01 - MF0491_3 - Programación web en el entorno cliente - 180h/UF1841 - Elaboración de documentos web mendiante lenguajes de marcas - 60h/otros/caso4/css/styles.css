@@ -1,0 +1,35 @@
+/* He metido el formulario en un div clase contendor para agrupar el formulario 
+centrado con padding de 10px y tamaño fuente 1rem*/
+
+.contenedor{
+    margin: 0 auto;
+    width: 300px;
+    background-color:burlywood;
+    font-size: 1rem;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+
+/* clase creada para centrar elementos como el h1 y la imagen*/
+.centro{
+    text-align: center;
+}
+
+img {
+    border: 1px solid black; /* borde para la imagen */
+}
+
+input {
+    width: 90%; /* todos los imput para que ocupe el 90% del contenedor */
+    padding: 10px; /* todos los input con padding 10 para que quede más espaciado*/
+}
+
+input[type="checkbox"] {
+    width: 5%; /* solo quiero que el input tipo checkbox que ocupe el 5% porque el 90 
+    lo coloca casi en el centro */
+}
+
+select {
+    padding: 10px; /* otro padding de 10 para que quede mas espaciado el campo */
+}

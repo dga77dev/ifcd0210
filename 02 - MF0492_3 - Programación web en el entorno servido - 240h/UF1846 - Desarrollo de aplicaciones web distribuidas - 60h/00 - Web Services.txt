@@ -1,0 +1,61 @@
+DEFINICIÓN
+
+A la WS se conectan distintas aplicaciones en distintos lenguajes de programación. 
+permitiendo compartir información entre ellos. La WS expone servicios que sera consumida
+por aplicaciones llamadas clientes utilizando protocolos abiertos y estándares para el intercambio
+de datos (http, htpps, smtp, sopa, rest). Es decir el WS puede estar hecho en JAVA y el cliente consumirlo en
+PHP o C.El cliente puede leer o escribir en el WS.
+
+
+
+
+CARACTERÍSTICAS
+
+Interoperatividad, 
+
+
+
+
+TIPOS
+
+Las más comunes son SOAP y REST:
+
+SOAP (Simple Object Access Protocol):
+
+	- Utiliza XML para el intercambio de información.
+	- Protocolo más formal y basado en el uso de WSDL (Web Services Description Language) define operaciones
+	  (métodos) disponibles y tipos de datos (parámetros).
+
+	Adecuado para operaciones más complejas y donde la seguridad y la transaccionalidad son críticas.
+
+
+
+
+EJEMPLOS DE USO
+
+1. Compras online: Cuando compras algo en una tienda online, la información de tu pedido se envía a un servicio web para procesarla. 
+Este servicio web se comunica con otros servicios web para verificar tu información de pago, disponibilidad del producto y calcular los gastos de envío.  
+Finalmente, toda la información se envía de vuelta a la tienda online, donde puedes ver la confirmación de tu pedido.
+
+2. Banca online: Cuando accedes a tu cuenta bancaria online, utilizas un servicio web para comunicarte con el sistema bancario.  
+Este servicio web te permite ver tu saldo, realizar transferencias y pagar facturas.  
+También puede utilizar servicios web para verificar tu identidad y proteger tu cuenta del fraude.
+
+3. Redes sociales: Cuando publicas algo en una red social, utilizas un servicio web para enviar tu publicación a los servidores de la red social.
+Este servicio web también se utiliza para mostrarte las publicaciones de tus amigos, notificaciones y otras actividades.
+
+4. Viajes: Cuando reservas un vuelo o un hotel online, utilizas un servicio web para comunicarte con las compañías aéreas o las empresas hoteleras.
+Este servicio web te permite verificar la disponibilidad, los precios y reservar tu viaje.  
+También puede utilizar servicios web para comparar precios y encontrar las mejores ofertas.
+
+
+6. Mapas y navegación: Cuando utilizas una aplicación de mapas para encontrar direcciones o navegar hasta un destino, utilizas un 
+servicio web para acceder a los datos de mapas y tráfico. Este servicio web te muestra la mejor ruta para llegar a tu destino
+ y te proporciona información sobre el tráfico en tiempo real.
+
+7. Correo electrónico: Cuando envías o recibes un correo electrónico, utilizas un servicio web para comunicarte con el servidor de correo electrónico. 
+Este servicio web se encarga de entregar tu correo electrónico al destinatario correcto y almacena tu correo electrónico en tu bandeja de entrada.
+
+8. Actualizaciones de software: Cuando tu computadora o teléfono inteligente busca actualizaciones de software,
+utiliza un servicio web para verificar si hay nuevas versiones disponibles.  Si hay una nueva versión disponible, el servicio web te la proporciona
+para que la descargues e instales.

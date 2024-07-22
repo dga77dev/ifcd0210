@@ -1,0 +1,16 @@
+#mapa {
+  width: 600px;
+  height: 400px;
+  background-image: url('mapa-espana.png'); /* Coloca aquí la ruta de tu imagen de mapa */
+  background-size: cover;
+  position: relative;
+}
+
+.ciudad {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>HTML & CSS</title>
+  </head>
+  <body>
+    <h1>Solicitud de información</h1>
+    <form>
+        <fieldset>
+            <legend>Información personal</legend>
+            Nombre:
+            <input type="text" name="name" size="30" maxlength="40">
+            Apellidos:
+            <input type="text" name="lastname" size="30" maxlength="40">
+            <br/>
+            Email:
+            <input type="email" id="email" name="email">
+            Teléfono:
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{6}">
+        </fieldset>
+        <br/><br/>
+        <fieldset>
+            <legend>Información académica</legend>
+            Nivel de estudios:
+            <select name="studies">
+                <option value="doc">Doctorado</option>
+                <option value="mas">Máster</option>
+                <option value="gr">Grado</option>
+                <option value="fp">FP grado medio</option>
+                <option value="eso">ESO</option>
+            </select>
+            <br/><br/>
+            Introduce tus estudios:
+            <br/>
+            <textarea name="message" rows="10" cols="80"></textarea>
+        </fieldset>
+    </form>
+  </body>
+</html>

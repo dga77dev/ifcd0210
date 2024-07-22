@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="es"/>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Belén Robles"/>
+  </head>
+
+  <body>
+    <h1>TABLAS</h1>
+
+    <h2>ESTRUCTURA BÁSICA</h2>
+    <table>
+      <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+      </tr>
+      <tr>
+        <td>Celda 4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+      </tr>
+    </table><br>
+   
+    <h2>FORMATO DE TABLA: BORDES, ALINEACIÓN, TAMAÑO...</h2>
+    <table border="1" align="right" width="400" cellpadding="50" cellspacing="30">
+      <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+      </tr>
+      <tr>
+        <td>Celda 4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+      </tr>
+    </table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+    <h2>FORMATO CONTENIDO DE CELDAS</h2>
+    <table border="1" width="500">
+      <tr>
+        <td align="center">Celda 1</td>
+        <td bgcolor="blue" align="right">Celda 2</td>
+        <td height="200" width="700">Celda 3</td>
+      </tr>
+      <tr style="background-color: blueviolet; text-align: center;">
+        <td>Celda 4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+      </tr>
+    </table><br>
+
+    <h2>AGRUPAMIENTO DE FILAS</h2>
+    <table border="1">
+      <thead style="background-color: aqua;
+      text-decoration-line: underline;
+      font-weight: bold;
+      font-size: 60px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >
+        <tr>
+          <td>Celda 1</td>
+          <td>Celda 2</td>
+          <td>Celda 3</td>
+        </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td>Celda 4</td>
+          <td>Celda 5</td>
+          <td>Celda 6</td>
+        </tr>
+        <tr>
+          <td>Celda 7</td>
+          <td>Celda 8</td>
+          <td>Celda 9</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: grey;font-weight: bolder;text-align: right;">
+        <tr>
+          <td>Celda 10</td>
+          <td>Celda 11</td>
+          <td>Celda 12</td>
+        </tr>
+      </tfoot>
+    </table><br><br><br>
+    
+    <h2>AGRUPAMIENTO DE COLUMNAS</h2>
+    <table border="1">
+      <colgroup span="1" 
+        style="background-color: grey;font-weight: bold;text-decoration: underline;"
+      >   
+      </colgroup>
+      <tr><td>Celda 1</td><td>Celda 2</td><td>Celda 3</td></tr>
+      <tr><td>Celda 4</td><td>Celda 5</td><td>Celda 6</td></tr>
+      <tr><td>Celda 7</td><td>Celda 8</td><td>Celda 9</td></tr>
+      <tr><td>Celda 10</td><td>Celda 11</td><td>Celda 12</td></tr>
+    </table><br>
+
+    <h2>TABLAS ANIDADAS</h2>
+    <table border="4"> 
+      <tr> 
+         <td>Celda tabla principal</td> 
+         <td> 
+             <table> 
+              <tr> 
+                 <td>Celda 1</td> 
+                 <td>Celda 2</td> 
+              </tr> 
+              <tr>
+                 <td>Celda 3<td>
+                 <td>Celda 4<td> 
+              </tr> 
+             </table> 
+        </td> 
+      </tr> 
+     </table>
+     <br><br>
+
+     <h2>EJEMPLO DE TABLA etiqueta th</h2>
+     <table class="default">
+      <tr>
+         <th>Destino</th>
+  
+        <th>En auto</th>
+    
+        <th>En tren</th>
+    
+        <th>En bicicleta</th>
+    
+      </tr>
+    
+      <tr>
+    
+        <td>Nueva York</td>
+    
+        <td>1 h 51 min</td>
+    
+        <td>1 h 22 min</td>
+    
+        <td>8 h 53 min</td>
+    
+      </tr>
+    
+      <tr>
+    
+        <td>Allentown</td>
+    
+        <td>1 h 11 min</td>
+    
+        <td>-</td>
+    
+        <td>6 h 9 min</td>
+    
+      </tr>
+    
+      <tr>
+    
+        <td>Reading</td>
+    
+        <td>1 h 12 min</td>
+    
+        <td>-</td>
+    
+        <td>5 h 40 min</td>
+    
+      </tr>
+    
+    </table>
+
+    <h2>EJEMPLO DE TABLA etiqueta scope</h2>
+    <table class="default">
+      <tr>
+        <th scope="row">Día</th>
+        <th>Hoy</th>
+        <th>Mañana</th>
+        <th>Miércoles</th>
+      </tr>
+    
+      <tr>
+        <th>Condición</th>
+        <td>Soleado</td>
+        <td>Mayormente soleado</td>
+        <td>Parcialmente nublado</td>
+      </tr>
+    
+      <tr>
+        <th>Temperatura</th>
+        <td>19°C</td>
+        <td>17°C</td>
+        <td>12°C</td>
+      </tr>
+    
+      <tr>
+        <th>Vientos</th>
+        <td>E 13 km/h</td>
+        <td>E 11 km/h</td>
+        <td>S 16 km/h</td>
+      </tr>
+    </table>
+
+  </body>
+</html>
+  <h2>EJEMPLO DE TABLA etiqueta th, scope y caption</h2>
+  <table class="default">
+
+  <caption>Tiempo necesario para viajar desde Philadelphia</caption>
+
+  <thead>
+
+    <tr>
+
+      <th scope="col">Destino</th>
+
+      <th scope="col">En auto</th>
+
+      <th scope="col">En tren</th>
+
+      <th scope="col">En bicicleta</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td>Nueva York</td>
+
+      <td>1 h 51 min</td>
+
+      <td>1 h 22 min</td>
+
+      <td>8 h 53 min</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Allentown</td>
+
+      <td>1 h 11 min</td>
+
+      <td>-</td>
+
+      <td>6 h 9 min</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Reading</td>
+
+      <td>1 h 12 min</td>
+
+      <td>-</td>
+
+      <td>5 h 40 min</td>
+
+    </tr>
+
+  </tbody>
+
+  <tfoot>
+
+    <tr>
+
+      <th scope="row">Promedio</th>
+
+      <th>1 h 24 min</th>
+
+      <th>1 h 22 min</th>
+
+      <th>6 h 54 min</th>
+
+    </tr>
+
+  </tfoot>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+

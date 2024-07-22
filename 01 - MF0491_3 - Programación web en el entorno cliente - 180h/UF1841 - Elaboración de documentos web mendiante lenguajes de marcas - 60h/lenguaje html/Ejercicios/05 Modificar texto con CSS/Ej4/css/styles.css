@@ -1,0 +1,12 @@
+.emphasized {
+    font-style: oblique;
+}
+.big {
+    font-size: 1.3em;
+}
+.redcolor {
+    color: red;
+}
+.greencolor {
+    color: #00cc00
+}

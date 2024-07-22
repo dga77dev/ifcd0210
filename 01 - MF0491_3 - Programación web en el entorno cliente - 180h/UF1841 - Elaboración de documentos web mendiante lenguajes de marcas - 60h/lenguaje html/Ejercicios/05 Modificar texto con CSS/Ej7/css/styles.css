@@ -1,0 +1,36 @@
+p
+{
+    border: 1px solid black;
+}
+.uniquepadding
+{
+    padding: 1em;
+}
+.toppadding
+{
+    padding-top: 1em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+}
+.bottompadding
+{
+    padding-top: 0em;
+    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
+}
+.leftpadding
+{
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 1em;
+    padding-right: 0em;
+}
+.rightpadding
+{
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 1em;
+}

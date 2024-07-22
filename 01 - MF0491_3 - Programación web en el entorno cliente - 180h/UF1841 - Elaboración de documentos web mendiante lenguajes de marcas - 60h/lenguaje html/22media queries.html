@@ -1,0 +1,70 @@
+<!--En este ejemplo:
+Se utiliza @supports para aplicar estilos de rejilla (grid) a un contenedor solo si el navegador admite la propiedad grid.
+Se utiliza @media print para cambiar el color del fondo y el texto cuando la página se imprime. Además, se oculta un párrafo específico para la impresión.
+Se utiliza @media speech para ocultar un párrafo específico cuando se lee en voz alta.
+Se utiliza @media all para aplicar estilos a todos los dispositivos. En este caso, se aumenta el tamaño de la fuente del título.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Consultas en CSS</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Estilos para navegadores que admiten la propiedad display: grid */
+        @supports (display: grid) {
+            .contenedor {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* Estilos para la impresión */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            .no-imprimir {
+                display: none;
+            }
+        }
+
+        /* Estilos para lectura en voz alta */
+        @media speech {
+            .oculto-voz {
+                display: none;
+            }
+        }
+
+        /* Estilos para todos los dispositivos */
+        @media all {
+            .titulo {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Ejemplo de Consultas en CSS</h1>
+
+    <!-- Contenido visible solo en impresión -->
+    <p class="no-imprimir">Este párrafo no se imprimirá.</p>
+
+    <!-- Contenido oculto para lectura en voz alta -->
+    <p class="oculto-voz">Este párrafo no se leerá en voz alta.</p>
+
+    <!-- Contenedor para navegadores que admiten display: grid -->
+    <div class="contenedor">
+        <div>Elemento 1</div>
+        <div>Elemento 2</div>
+    </div>
+</body>
+</html>

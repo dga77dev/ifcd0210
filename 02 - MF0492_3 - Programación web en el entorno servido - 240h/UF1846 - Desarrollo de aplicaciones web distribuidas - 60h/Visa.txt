@@ -1,0 +1,22 @@
+
+1. Crear un interfaz que contiene TODAS las operaciones que tendrá nuestra WS de Red Visa.
+(Al ser tipo Java Soap se utiliza el paquete javax) que llamaremos TransaccionService.
+
+(consultas a base de datos)
+
+- consulta datos tarjeta
+- consulta datos comercio y datafono
+- consulta datos banco cliente
+- consulta datos banco comercio
+- consulta saldo tarjeta
+-
+
+- Se crea un método transacción donde se le pasan los datos del comercio y
+de la tarjeta del cliente.
+ 
+ 
+2. Crear una clase que implementa la interfaz
+ 
+En el momento de iniciar una transaccion el comercio realiza una llamada
+para comprobar los datos de la tarjeta y el cliente sean correcto
+ 

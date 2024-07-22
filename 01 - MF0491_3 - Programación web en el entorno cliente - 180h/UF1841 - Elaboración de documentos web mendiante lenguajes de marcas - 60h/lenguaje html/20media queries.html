@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Media Queries</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .contenedor {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Media query para pantallas de hasta 600px de ancho */
+        @media screen and (max-width: 600px) {
+            .contenedor {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ejemplo de Media Queries</h1>
+        <p>Este es un ejemplo de cómo usar media queries para hacer que un sitio web sea responsive.</p>
+    </div>
+</body>
+</html>

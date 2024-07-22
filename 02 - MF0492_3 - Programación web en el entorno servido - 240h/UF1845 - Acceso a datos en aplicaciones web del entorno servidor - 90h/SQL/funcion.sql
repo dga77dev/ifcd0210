@@ -1,0 +1,11 @@
+DELIMITER $$
+
+CREATE FUNCTION goles_marcados (goles_e1 INT, goles_e2 INT)
+RETURNS INT
+DETERMINISTIC
+NO SQL
+BEGIN
+    RETURN goles_e1 + goles_e2;
+END $$
+
+DELIMITER ;

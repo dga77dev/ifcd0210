@@ -1,0 +1,28 @@
+h1
+{
+    text-align: center;
+}
+.alignright
+{
+    text-align: right;
+}
+.alignleft
+{
+    text-align: left;
+}
+.aligncenter
+{
+    text-align: center;
+}
+p
+{
+    text-indent: 1em;
+}
+.blackborder
+{
+    border: 1px solid black;
+}
+.blueborder
+{
+    border: 3px dotted blue;
+}

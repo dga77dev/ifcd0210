@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ulibreria">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../nuevo/out/artifacts/ulibreria/ulibreria.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,36 @@
+PROCESO PARA DESARROLLAR UNA WEB SERVICE CON SOAP EN JAVA
+=========================================================
+
+1. Define la funcionalidad del servicio web.
+2. Decide qué funcionalidades o datos deseas exponer a través del servicio web.
+3. Crea la interfaz del servicio utilizando WSDL:
+	WSDL (Web Service Description Language) describe la interfaz del servicio web.
+	Define los métodos, parámetros y tipos de datos que el servicio web aceptará y devolverá.
+4. Implementa la lógica del servicio en Java:
+5. Crea una clase que implemente la interfaz definida en el paso anterior.
+6. Agrega la lógica para las operaciones que deseas ofrecer (por ejemplo, consultar o crear empleados).
+7. Empaqueta el servicio en un archivo WAR:
+8. Empaqueta tu proyecto en un archivo Web Application Archive (WAR).
+9. Esto facilita su despliegue en un servidor de aplicaciones Java.
+10. Despliega el servicio en un servidor de aplicaciones:
+11. Utiliza un servidor como Apache Tomcat o Wildfly para alojar tu servicio web.
+12. Despliega el archivo WAR en el servidor.
+13. Prueba el servicio:
+
+En el video: 
+
+1. Definir una interfaz que contenga los servicios.
+
+2. Definir una clase que implementa los servicios.
+	La clase no debe ser final, no abstract anotada con @WebService
+	Los métodos deben ser públicos, no debe tener la anotación
+	@WebMethod
+
+3. Consumo de Servicios 
+	Conocer el descriptor WSDL
+	Crear el cliente
+	Consumir el servicio desde cualquier componente Java
+	(Clases, Servlet) invocando los métodos definidos en la creación
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Formulario-->
+    <div class="contenedor">
+        <h1 class="centro">Registro de usuario</h1>
+        <form>
+            <!-- imagen dentro de un parrafo que se centra  -->
+            <p class="centro">
+                <img src="../img/avatar.png" width="90px" alt="imagen de usuario">
+            </p>
+
+            <!-- Campo nombre tipo texto obligario-->
+            <p>
+                <label for="nombre">Nombre completo*</label><br/>
+                <input type="text" name="nombre" title="Introduce nombre completo" placeholder="Introduce tu nombre" required>
+            </p>
+
+            <!-- campo tipo email obligatorio -->
+            <p>
+                <label for="correo">Dirección de correo electrónico*</label><br/>
+                <input type="email" name="correo" title="Introduce tu email" placeholder="Introduce tu email" required>
+            </p>
+
+            <!-- campo contraseña obligatorio-->
+            <p>
+                <label for="pass">Contraseña*</label><br/>
+                <input type="password" name="pass" title="Introduce una contraseña" placeholder="Introduce una contraseña" required>
+            </p>
+
+            <!-- Select para seleccionar un pais y guarde su iniciales de valor-->
+            <p>
+                <label for="pais">País de residencia</label><br/>
+                <select name="pais">
+                    <option value="es">España</option>
+                    <option value="fr">Francia</option>
+                    <option value="pt">Portugal</option>
+                </select>
+            </p>
+
+            <!-- checkbox obligatorio por que tiene que aceptar los terminos y condiciones-->
+            <p>
+                <input type="checkbox" name="condiciones" required title="Acepta"><label for="condiciones">Aceptación de los términos y condiciones</label>
+            </p>
+
+            <p>
+                <input type="submit" name="envio" value="Enviar formulario">
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>

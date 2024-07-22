@@ -1,0 +1,325 @@
+*{
+    padding:0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #ff6347,#00ff44, #d8f004); /* Cambia los colores según lo necesites */
+    /* position:relative; */
+    height: 100vh;
+
+}
+
+header {
+    width: 100%; 
+    height: 20vh;
+    display: inline;
+}
+
+nav{
+    margin: 0 auto;
+    background-color:black;
+    width: 55%; 
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+main { 
+    width: 100%;
+    height: auto; /* Se adapta al contenido */
+
+    background-image:url('../images/fondobici.jpg');
+    background-size: cover;
+}
+
+section{
+    margin: 0px 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 10px; 
+    width: 100%;
+    height: 30vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: yellow;
+    border-top: 4px white dotted;
+}
+
+.textologo {
+    color: black;
+    font-size: 100px;
+    font-weight: bolder;
+    /* margin: 0 auto; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 1px white; /* Borde del texto en navegadores WebKit */
+}
+
+.coletilla{
+    font-size: 30px;
+    color:green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px white; /* Borde del texto en navegadores WebKit */
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0 15px;
+    background-color: black; 
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    padding: 0 15px;
+    background-color: orangered; 
+    color: black;
+    border: 1px solid white ;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.menu a:active {
+    background-color: orange;
+}
+
+
+.titulo {
+    font-size: 50px;
+}
+
+.cuadro {
+    width: 400px;
+    height:100px;
+    background-color: orangered;
+    color: black;
+    opacity: 90%;
+    border-radius: 25px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.c1{
+    position: relative;
+    bottom: 0px;
+    left: 100px;
+}
+
+.c2{
+    /* al ser relativo se pone debajo pues 
+    con top lo sube */
+    position: relative;
+    top: -100px;
+    left: 560px;
+}
+
+.texto-cuadro{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.size60{
+    width: 60%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.tabla-footer {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Estilo para todas las clases que comiencen por "columna" */
+[class^="columna"] {
+    color: white;
+    padding: 0 20px;
+}
+
+.columna4{
+    color: white;
+}
+
+/*
+td.columna1 p:first-child{
+    color: yellow;
+    text-decoration: underline;
+}
+
+td.columna4 p:first-child{
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+*/
+[class^="columna"]  p:first-child{
+    color: yellow;
+}
+
+td.columna4 p a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.cuadro-mapa {
+    width: 600px;
+    height:515px;
+    background-color: white;
+    color: black;
+    opacity: 90%;
+    border-radius: 25px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.titulo-peque{
+    background-color: orangered;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    color: white;
+    font-weight: bold;
+}
+
+.espacios-servicios {
+    left: 100px; 
+    margin-top: 20px;
+}
+
+.espacios-servicios2 {
+    position: absolute; 
+    top: 375px; 
+    left: 600px;
+}
+
+.tabla-servicios{
+    margin-left: 20px;
+    margin-top: 20px; 
+    background-color: orangered;
+    width: 500px;
+    padding: 20px;
+    border-radius:  15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.tabla-servicios tr th{
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.tabla-servicios tr td ul{
+    margin-top: 10px;
+}
+
+table.tabla-servicios tbody tr td ul li {
+    list-style: none;
+    margin-left:15px;
+}
+
+.citaprevia {
+    font-size: 18px;
+    text-decoration: none;
+    background-color:#00ff44 ;
+    border: 1px white solid;
+    color: white;
+    padding: 0px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.citaprevia:hover{
+    background-color: orangered;
+}
+
+.proyector{ 
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+}
+
+h6{
+    font-size: 2rem; /* con rem porque con em va heredando el valor y va creciendo */
+}
+
+.formulario {
+    width: 55%;
+    margin-top: 120px;
+    background-color: orangered;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 90%;
+}
+
+fieldset {
+    border: 2px solid yellow;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: white;
+}
+label{ 
+    font-size:  1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px; 
+  }
+
+input:focus {
+    background-color: greenyellow;
+  }
+
+.botonmenu {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.botonmenu:hover {
+    background-color: orangered;
+    color: black;
+}
+.enlacelogo{
+    text-decoration: none;
+}
+
+.recuadro-carnets {
+    background-image: linear-gradient(to right, blue , cyan, #d8f004, white);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+

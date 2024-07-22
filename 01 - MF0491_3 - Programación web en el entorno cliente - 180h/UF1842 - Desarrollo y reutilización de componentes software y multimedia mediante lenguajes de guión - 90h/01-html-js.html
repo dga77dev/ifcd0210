@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. ventana de alerta en el objeto window. <-sin S ;)
+        window.alert("1. Bienvenido a nuestra página web");
+
+        // 2. ventana de confirmación
+        window.confirm("2. ¿Estas seguro de confirmar?");
+
+        // 3. ventana con pregunta
+        prompt("3. ¿Como te llamas?");
+
+        // 4. almacenar respuesta en variable
+        let nombre=prompt("¿Dime tu nombre otra vez?")
+        alert ("Te llamas "+nombre);
+
+        // 5. valor de ventana de confirmación
+        let valor = window.confirm("¿Estas conformi si o no");
+        if (valor) {
+            alert ("Estupendo estas conforme.");
+        } else {
+            alert ("Si no estas conforme pagas");
+        }
+    </script>
+
+</head>
+<body>
+        <button onclick="ingresaNombre()">Ingresar nombre</button>
+
+        <!-- JS -->
+    <script>
+        function ingresaNombre(){
+            let nombre=prompt("¿Dime tu nombre otra vez?")
+            // Lo normal es utilizarlo con el getelementid no con writeln.<<<---
+            document.writeln ("<h2><p><b>Un saludo "+nombre+"</b></p></h2>");
+        }
+    </script>
+</body>
+</html>

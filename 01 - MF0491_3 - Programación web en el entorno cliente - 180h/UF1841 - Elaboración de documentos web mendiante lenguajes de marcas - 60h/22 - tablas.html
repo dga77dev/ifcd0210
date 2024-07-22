@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" align="center" width="300" cellpadding="80" cellspacing="150">
+        <tr>
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td>celda 3</td>
+        </tr>
+        <tr>
+            <td>celda 4</td>
+            <td>celda 5</td>
+            <td>celda 6</td>
+        </tr>
+        <tr>
+            <td>celda 7</td>
+            <td>celda 8</td>
+            <td>celda 9</td>
+        </tr>
+    </table>
+
+    <p></p>
+    <table border="1"  width="500" align="right">
+        <!-- Estilos a cada columna-->
+        <tr>
+            <td align="center">c11</td>
+            <td bgcolor="green" align="right">c12</td>
+            <td width="700" height="100">c13</td> <!-- Respeta el ancho de la tabla aunque el tamaño columna sea mayor que el de la tabla-->
+        </tr>
+        <tr>
+            <td>c21</td>
+            <td>c22</td>
+            <td>c23</td>
+        </tr>
+    </table>
+    <p></p>
+    <!-- tabla con cabecera cuerpo y pie-->
+    <p>Agrupamiento de filas</p>
+    <table style="border: 2px blue dotted; ">
+        <!-- cabecera de la tabla -->
+        <thead style="font-weight: bold; text-align:center; background-color: pink;">
+            <td>titulo1</td>
+            <td>titulo2</td>
+            <td>titulo3</td>
+        </thead>
+        <!-- cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>celda 11</td>
+                <td>celda 12</td>
+                <td>celda 13</td>
+            </tr>
+            <tr>
+                <td>cuerpo 21</td>
+                <td>cuerpo 22</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <!-- pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p></p>
+    <p>Agrupamiento columna (colgroup(</p>
+    <table border="1">
+        <colgroup span="2" style="background-color: grey; font-weight: bold;text-decoration: underline;">   
+        </colgroup>
+        <tr>
+            <td>Celda 1</td><td>Celda 2</td><td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td><td>Celda 5</td><td>Celda 6</td>
+        </tr>
+        <tr>
+            <td>Celda 7</td><td>Celda 8</td><td>Celda 9</td>
+        </tr>
+        <tr>
+            <td>Celda 10</td><td>Celda 11</td><td>Celda 12</td>
+        </tr>
+      </table><br>
+      <h2>TABLAS ANIDADAS</h2>
+      <table border="4"> 
+        <tr> 
+           <td>Celda tabla principal</td> 
+           <td> 
+               <table> 
+                <tr> 
+                   <td>Celda 1</td> 
+                   <td>Celda 2</td> 
+                </tr> 
+                <tr>
+                   <td>Celda 3<td>
+                   <td>Celda 4<td> 
+                </tr> 
+               </table> 
+          </td> 
+        </tr> 
+       </table>
+</body>
+</html>

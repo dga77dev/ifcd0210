@@ -1,0 +1,75 @@
+<!-- 
+Ejercicio de Evento onload en HTML y JavaScript:
+Crear una página web que muestre un mensaje de bienvenida cuando se cargue completamente. El mensaje
+de bienvenida debe aparecer automáticamente una vez que todos los elementos de la página estén listos
+para ser vistos por el usuario.
+
+
+1. Mensaje de Bienvenida:
+ Cuando la página se cargue completamente, mostrar un mensaje de bienvenida que incluya el
+nombre del usuario.
+ Este mensaje debe aparecer en algún lugar visible de la página, como un encabezado (<h1>) o un
+párrafo (<p>).
+ El mensaje debe incluir el texto "¡Bienvenido a nuestra página web!" seguido del nombre del
+usuario, por ejemplo, "¡Bienvenido, [nombre]!".
+
+2. Captura del Nombre del Usuario:
+ Antes de cargar completamente la página, pedir al usuario que ingrese su nombre en un cuadro de
+diálogo (prompt) al abrir la página.
+ Utiliza JavaScript para capturar el nombre ingresado por el usuario y almacenarlo en una variable.
+3. Evento onload:
+ Utiliza el evento onload en el elemento <body> de la página para ejecutar una función de JavaScript
+cuando la página se cargue completamente.
+ En esta función, muestra el mensaje de bienvenida utilizando el nombre del usuario ingresado
+anteriormente.
+4. Estilo CSS (opcional):
+ Agrega estilos CSS para mejorar la apariencia del mensaje de bienvenida y hacerlo más atractivo
+visualmente.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .contenedor {
+            margin:0 auto;
+            background-color:antiquewhite;
+            font-size: 2rem;
+            padding: 30;
+            text-align: center;
+            width: 500px;
+            border: 4px double black ;
+        }
+
+        h1 { 
+            color: darkblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+    </style>
+
+    <script>
+        // Precarga
+        let nombre = prompt("Introduce su nombre: ");
+        // Función mensaje
+        function mensaje(){
+            var bienvenida = "¡Bienvenido "+nombre+"!";
+            document.getElementById("mensajito").innerText = bienvenida
+        }
+    </script>
+
+</head>
+
+<body onload="mensaje()">
+    <div class="contenedor">
+        <h1 id="mensajito"></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de elementos</title>
+
+</head>
+<body>
+    <ul id="listaElementos">
+        <li>Elemento 1<button onclick="elimina(this)">Eliminar</button></li>
+        <li>Elemento 2<button onclick="elimina(this)">Eliminar</button></li>
+        <li>Elemento 3<button onclick="elimina(this)">Eliminar</button></li>
+    </ul>
+
+    <button onclick="agrega()">Agregar Elemento</button>
+
+    <!-- JS -->
+    <script>
+        function elimina(boton) {
+            // Obtener el elemento li padre del botón
+            var elementoPadre = boton.parentNode;
+            // Eliminar el elemento li de la lista
+            elementoPadre.remove();
+        }
+    
+    // agregar elemento
+
+    function agrega() {
+        // Obtener la lista de elementos
+        var lista = document.getElementById("listaElementos");
+        // Crear un nuevo elemento li
+        var nuevoElemento = document.createElement("li");
+        // Establecer el texto del nuevo elemento
+        nuevoElemento.textContent = "Elemento " + (lista.childElementCount + 1);
+        // Crear un botón de eliminar para el nuevo elemento
+        var botonEliminar = document.createElement("button");
+        botonEliminar.textContent = "Eliminar";
+        // Agregar el evento onclick para eliminar el elemento
+        botonEliminar.onclick = function() {
+            elimina(this);
+        };
+        // Agregar el nuevo elemento a la lista
+        lista.appendChild(nuevoElemento);
+        // Agregar el boton de eliminar elemento de la lista
+        nuevoElemento.appendChild(botonEliminar);
+    }
+    
+    </script>
+
+
+</body>
+</html>

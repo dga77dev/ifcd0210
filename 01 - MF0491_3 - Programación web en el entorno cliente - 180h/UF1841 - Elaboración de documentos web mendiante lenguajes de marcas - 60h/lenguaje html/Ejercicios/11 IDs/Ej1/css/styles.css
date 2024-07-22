@@ -1,0 +1,11 @@
+p {
+    font-family:Comic Sans MS;
+}
+p#important {
+    font-family:Comic Sans MS;
+    font-size: 1.5em;
+}
+p.not_important {
+    font-family:Comic Sans MS;
+    font-size: 0.7em;
+}

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="liberiilla">
+    <output-path>$PROJECT_DIR$/out/artifacts/liberiilla</output-path>
+    <root id="archive" name="liberiilla.jar">
+      <element id="dir-copy" path="$PROJECT_DIR$/src/modelo" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/modelo/Persona.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/modelo/Empleado.java" />
+    </root>
+  </artifact>
+</component>

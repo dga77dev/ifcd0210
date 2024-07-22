@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos SYSTEM "alumnos.dtd"> <!-- coge la estructura de alumnos.dtd -->
+<alumnos>
+    <alumno>
+        <numero>1</numero>
+        <nombre>Juan</nombre>
+        <apellidos>García Pérez</apellidos>
+        <curso>Informática</curso>
+    </alumno>
+    <alumno>
+        <numero>2</numero>
+        <nombre>María</nombre>
+        <apellidos>López Martínez</apellidos>
+        <curso>Matemáticas</curso>
+    </alumno>
+    <alumno>
+        <numero>3</numero>
+        <nombre>Carlos</nombre>
+        <apellidos>Ruiz González</apellidos>
+        <curso>Física</curso>
+    </alumno>
+    <alumno>
+        <numero>4</numero>
+        <nombre>Ana</nombre>
+        <apellidos>Fernández Rodríguez</apellidos>
+        <curso>Química</curso>
+    </alumno>
+    <alumno>
+        <numero>5</numero>
+        <nombre>Pedro</nombre>
+        <apellidos>Martín Sánchez</apellidos>
+        <curso>Biología</curso>
+    </alumno>
+    <alumno>
+        <numero>6</numero>
+        <nombre>Laura</nombre>
+        <apellidos>Gómez Díaz</apellidos>
+        <curso>Historia</curso>
+    </alumno>
+    <alumno>
+        <numero>7</numero>
+        <nombre>Miguel</nombre>
+        <apellidos>Rodríguez Pérez</apellidos>
+        <curso>Economía</curso>
+    </alumno>
+    <alumno>
+        <numero>8</numero>
+        <nombre>Sofía</nombre>
+        <apellidos>Gutiérrez Martínez</apellidos>
+        <curso>Arte</curso>
+    </alumno>
+    <alumno>
+        <numero>9</numero>
+        <nombre>Pablo</nombre>
+        <apellidos>Romero Sánchez</apellidos>
+        <curso>Lengua</curso>
+    </alumno>
+    <alumno>
+        <numero>10</numero>
+        <nombre>Isabel</nombre>
+        <apellidos>Molina Ruiz</apellidos>
+        <curso>Geografía</curso>
+    </alumno>
+</alumnos>

@@ -1,0 +1,16 @@
+form
+{
+    width: 50%;
+    font-family: Verdana;
+    font-size: 1em;
+}
+input[type="text"], input[type="email"],input[type="tel"], textarea
+{
+    margin-bottom: .25em;
+    padding: 0.25em;
+    font-size: 1em;
+}
+legend
+{
+    font-weight: 700;
+}

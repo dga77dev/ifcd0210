@@ -1,0 +1,7 @@
+p
+{
+    border-top: 2px ridge green;
+    border-bottom: 3px dashed black;
+    border-left: 1px groove red;
+    border-right: 5px inset blue;
+}

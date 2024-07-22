@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Días de rutas.BiciTaller</title>
+    <meta name="description" content="BiciTaller. Previa a tres dias de carrera.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- logotipo
+        
+        El div con flexbox para alinear verticalmente el logo y el texto. -->
+        
+        <div style="display: flex; align-items:center; flex-direction: row;justify-content: center; gap:15px;">
+   
+                <div><img src="../images/logo.svg" title="BiciTaller SL" alt="Logotipo de BiciTaller SL" height="150"></div>
+                <div>
+                <span class="textologo">
+                    BiciTaller SL
+                </span>
+                </div>
+        </div>
+
+        <nav>
+            <!-- menu navegacion-->
+            <div class="menu">
+                <a href="index.html">QUIENES SOMOS</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="rutas.html">RUTAS</a>
+                <a href="club.html">CLUB</a>
+            </div>
+        </nav>
+        <p></p>
+    </header>
+
+    <main>
+        <hr size="8" color="orangered" style="margin-top: 10px">
+
+        <section style="margin-top: 20px;">
+          <p></p><p></p>
+          <div class="menu">
+            <p>
+                <span class="titulo-peque">RUTAS</span>
+                <a href="dia1.html" target="marcoabajo">DIA 1</a>
+                <a href="dia2.html" target="marcoabajo">DIA 2</a>
+                <a href="dia3.html" target="marcoabajo">DIA 3</a>
+            </p>
+          </div>
+          <!-- Iframe que carga el contenido de los enlaces-->
+          <div class="proyector">
+            <iframe id="marcoabajo" name="marcoabajo" src="dia1.html"  frameborder="0"
+            title="Videos"
+            width="810px"
+            height="500px">
+            </iframe>
+          </div>
+        </section>
+        <p>&nbsp;</p><p>&nbsp;</p>
+    </main>
+
+    <footer>
+        <table class="tabla-footer">
+            <tr>
+                <td class="columna1">
+                    <p>Horario</p>
+                    <p>
+                        Lunes a Viernes 10:00 - 14.00 y 16:30 a 19:30<br>
+                        Sábado: 10:00 a 13:30<br>
+                        Domingo: Cerrado
+                    </p>
+                </td>
+
+                <td class="columna2">
+                    <p>Donde Estamos</p>
+                    <p> </p>
+                    <p>C. Escritora Carmen Conde, Local 10, Puerto de la Torre, 29010 Málaga</p>
+                    <p><a href="donde-estamos.html">Ver Mapa</a></p>
+                </td>
+
+                <td class="columna3">
+                    <!-- por si se pone algo más adelante-->
+                </td>
+                
+                <td class="columna4">
+                    <p>Información</p>
+                    <p><a href="terminos.html">Terminos de uso</a></p>
+                    <p><a href="privacidad.html">Politica de privacidad</a></p>
+                    <p><a href="../docs/reclamaciones.pdf">Hoja de reclamaciones (PDF)</a></p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

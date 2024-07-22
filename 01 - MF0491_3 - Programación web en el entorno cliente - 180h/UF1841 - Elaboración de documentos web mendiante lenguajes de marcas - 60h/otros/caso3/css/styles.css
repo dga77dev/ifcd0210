@@ -1,0 +1,28 @@
+h1 { 
+    text-align: center; /* Se situa el encabezado en el centro */
+
+}
+
+th {
+    background-color: cadetblue; /* color de fondo para las cabeceras */
+    border: 1px solid black; /* borde de 1 px para las celdas de las cabecera */
+}
+
+td {
+    background-color: burlywood; /* color de fondo para las celdas con los datos */
+    text-align: center; /* texto alineado en el centro de cada celda */
+    border: 1px solid black; /* borde de 1 px para cada celda de datos */
+}
+
+table {
+    margin: 0 auto; /* tabla centrada */
+    border: 2px dotted green; /* color verde del borde de la tabla con fomato 'dotted' */
+    width: 65%; /* la tabla ocupara el 65% de la pantalla adaptandose acualquier dispositivo */
+    font-size: 1rem; /* el texto de la tabla será la unidad base en cualquier dispositivo */
+    background-color: gray; /* color de fondo para la tabla que quede mas bonita */
+    border-collapse: collapse; /* quitar los espacios entre celdas */
+}
+
+.hora {
+    background-color: cornflowerblue; /* color de fondo de las horas que no forma parte del encabezado */
+}

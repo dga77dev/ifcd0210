@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!ELEMENT alumnos (alumno+)> 
+   <!ELEMENT alumno (numero, nombre, apellidos, curso)>
+   <!ELEMENT numero (#PCDATA)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT apellidos (#PCDATA)>
+   <!ELEMENT curso (#PCDATA)>

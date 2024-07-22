@@ -1,0 +1,1 @@
+select idPartido, fechaPartido, goles_e1, goles_e2 from goles_marcados

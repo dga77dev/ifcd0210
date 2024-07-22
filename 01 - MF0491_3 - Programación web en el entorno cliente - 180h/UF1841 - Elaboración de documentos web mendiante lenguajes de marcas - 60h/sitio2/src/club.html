@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiciTaller</title>
+    <meta name="description" content="BiciTaller. Tu taller de confianza en Málaga con la mejor calidad y los mejores precios.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- logotipo
+        
+        El div con flexbox para alinear verticalmente el logo y el texto. -->
+        
+        <a class="enlacelogo" alt="logo bicitaller" href="index.html">
+        <div style="display: flex; align-items:center; flex-direction: row;justify-content: center; gap:15px;">
+                <div><img src="../images/logo.svg" title="BiciTaller SL" alt="Logotipo de BiciTaller SL" height="150"></div>
+                <div>
+                    <span class="textologo">
+                        BiciTaller SL
+                    </span>
+                </div>
+        </div>
+        </a>        
+
+
+        <nav>
+            <!-- menu navegacion-->
+            <div class="menu">
+                <a href="index.html">QUIENES SOMOS</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="rutas.html">RUTAS</a>
+                <a href="club.html">CLUB</a>
+            </div>
+        </nav>
+        <p></p>
+    </header>
+
+    <main>
+        <hr size="8" color="orangered" style="margin-top: 10px">
+        <h5 class="textologo" style="display: inline;">CLUB BICITURBO</h5></b></span>
+        <p>&nbsp;</p><p>&nbsp;</p>
+        <section>
+            <table class="recuadro-carnets">
+                <tr>
+                    <td>
+                        <div style="margin-left: 40px;">
+                            <p><span class="titulo-peque">Beneficios del club:</span><p>
+                            <p>&nbsp;</p><p>&nbsp;</p>    
+                            <ul>
+                                <li>Descuento 10% de descuento en mantenimiento.</li>
+                                <li>Descuento 10€ en carreras</li>
+                                <li>20% descuento en carnet de la federación</li>
+                                <li>10% descuento ropa del club</li>
+                                <li>Comida de navidad gratis</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                      <img src="../images/carnet.png" alt="carnet de socio" width="200px">  
+                    </td>
+                </tr>
+            </table>
+
+        <p>&nbsp;</p><p>&nbsp;</p>
+            <div class="formulario">
+                <form>
+                    <span class="textologo" style="display: inline;"><h6>Formulario de inscripción</h6></span>
+                    <p></p>
+                        <fieldset>
+                            <p><legend>Datos Personales</legend></p>
+                            <p>
+                                <label for="nombre">Nombre completo (30c)*</label><br/>
+                                <input type="text" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚ\s]{1,30}" placeholder="Introduce tu nombre completo " maxlength="30" size="28" required title="Solo se permite texto y espacio hasta 30 caracteres.">
+                            </p>
+                            <p>
+                                <label for="correo">Correo electrónico (8/30c)*</label><br/>
+                                <input type="email" name="correo" pattern="{8,30}" minlength="8" placeholder="Introduce tu email" maxlength="30" size="28" title="Solo se permite email de 30 caracteres" required>
+                            </p>
+                            <p>
+                                <label for="fecha-nacimiento">Fecha de Nacimiendo</label><br/>
+                                <input type="date" name="fecha-nacimiento">
+                            </p>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <p><legend>Preferencias</legend></p>
+                            <input type="checkbox" name="preferencias" id="mtb"> MTB 
+                            <input type="checkbox" name="preferencias" id="carretera"> Carretera 
+                            <input type="checkbox" name="preferencias" id="descenso"> Descenso 
+                            <input type="checkbox" name="preferencias" id="ebike"> Ebike 
+                            <input type="checkbox" name="preferencias" id="bmx"> BMX
+                        </fieldset>
+                        (*) Campos Obligatorios
+                        <p>&nbsp;</p>
+                        <p style="text-align: center;" >
+                            <input class="botonmenu" type="submit" value="ENVIAR">
+                        </p>
+                </form>
+            </div>
+        </section>
+        <p>&nbsp;</p><p>&nbsp;</p>
+    </main>
+
+    <footer>
+        <table class="tabla-footer">
+            <tr>
+                <td class="columna1">
+                    <p>Horario</p>
+                    <p>
+                        Lunes a Viernes 10:00 - 14.00 y 16:30 a 19:30<br>
+                        Sábado: 10:00 a 13:30<br>
+                        Domingo: Cerrado
+                    </p>
+                </td>
+
+                <td class="columna2">
+                    <p>Donde Estamos</p>
+                    <p> </p>
+                    <p>C. Escritora Carmen Conde, Local 10, Puerto de la Torre, 29010 Málaga</p>
+                    <p><a href="donde-estamos.html">Ver Mapa</a></p>
+                </td>
+
+                <td class="columna3">
+                    <!-- por si se pone algo más adelante-->
+                </td>
+                
+                <td class="columna4">
+                    <p>Información</p>
+                    <p><a href="terminos.html">Terminos de uso</a></p>
+                    <p><a href="privacidad.html">Politica de privacidad</a></p>
+                    <p><a href="../docs/reclamaciones.pdf">Hoja de reclamaciones (PDF)</a></p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

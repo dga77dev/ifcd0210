@@ -1,0 +1,40 @@
+VISA
+====
+
+
+1)
+Para el sistema de pago con tarjetas VISA se propone una arquitectura de servicios distribuido
+ya que se va a interactuar con distintos equipos que van a estar localizadas en distintas 
+localizaciones, en el cual cada terminal tiene su propio sistema y que hace uso de su propia tecnología 
+o lenguajes de programación para comunicarse con VISA.
+
+Este sistema nos permite:
+
+La escalabilidad de los servicios, aumentando los recursos sin afectar al 
+rendimiento.
+
+La fiablidad y tolerancia a fallos, tendrá la capacidad para realizar las tareas en todo momento
+correctamente, Se podrá incrementar la disponibilidad mejorando los componentes y diseñando replicas.
+ y consistencia y si se produciera algún fallo  seguiría opereando correctamente ocultando el fallo. 
+
+Para 
+
+Se va a utilizar el protocolo de mensajes SOAP que tiene una gran capacidad de seguridad, 
+confiabilidad y compatibilidad con diferentes sistemas.
+
+Se utilizaria una web service en el servidor encargada de comunicarse con distintos actores (bancos, clientes)
+solicitando autorización de las transaccionees, realización de operaciones, autentificaciones, 
+notificaciones, etc. Además para definir los detalles del servicio web se implementaría WSDL para que cada
+nodo entienda como interactuar con el ws.
+
+Se implementaría con protocolo https con certificados ssl para dar seguridad a la comunicación entre nodos,
+el cifrado de datos y autentificación de identidad.
+
+Además aplicar estandares de seguridad en servicios web como WS Security Tokens para autentificación de
+servicios, SAML para autentificación de usuarios.
+
+Seleccionaría un lenguaje de programación como JAVA que ya posee herramientas que ayudan a la implementación 
+de los servicios web, un sistema de bases de datos basado en MySQL y un framework moderno 
+como Spring Web Service que se puede utilizar con JAVA.
+
+

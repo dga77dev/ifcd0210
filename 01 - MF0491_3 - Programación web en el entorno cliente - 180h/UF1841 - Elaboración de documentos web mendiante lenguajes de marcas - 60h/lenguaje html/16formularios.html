@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta lang="es"/>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Belén Robles"/>
+  </head>
+
+  <body>
+    <h1>FORMULARIOS</h1>
+    <h3>Crear formulario</h3>
+    <form action="/ruta-de-la-pagina-que-procesa-el-formulario-enviado" 
+      method="post" 
+      name="miformulario"
+      target="_blank">
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" value="Introduce tu nombre"/>
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" />
+        </li>
+        <li>
+          <label for="subscribe">Subscribirte a nuestro boletín de noticias:</label>
+          <input type="checkbox" id="subscribe" name="user_subscribe" value="yes"/>
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <textarea id="msg" name="user_message" rows="6" cols="50"></textarea>
+        </li>
+      </ul>
+
+      <input type="file" id="user_upload" name="user_upload">
+      <br><br>
+      <input type="file" id="uploadedfile" name="user_uploadedfile" accept="image/png, image/jpeg" />
+      <br><br>
+      <input type="hidden" name="user-origin" value="16formularios.html"/>
+      <br><br>
+      <label for="pw">Contraseña:</label>
+      <input type="password" id="pw" name="user_pw" value=""/>
+      <br><br>
+      <fieldset>
+        <legend>JORNADAS DE TRABAJO</legend>
+          <p>Selecciona en qué jornadas estás disponible:
+          <br>
+          <label><input type="radio" name="jor-completa" value="completa"> Jornada completa</label>
+          <br>
+          <label><input type="radio" name="jor-par-man" value="parcial-ma" checked> Jornada parcial mañana</label>
+          <br>
+          <label><input type="radio" name="jor-par-tar" value="parcial-ta"> Jornada parcial tarde</label>
+          </p>
+          <p>Selecciona lo que te gusta:
+            <br>
+            <label><input type="radio" name="jor-completa2" value="completa" required> Jornada completa</label>
+            <br>
+            <label><input type="radio" name="jor-par-man2" value="parcial-ma" required> Jornada parcial mañana</label>
+            <br>
+            <label><input type="radio" name="jor-par-tar2" value="parcial-ta" required> Jornada parcial tarde</label>
+            </p>
+        </fieldset>
+        <br><br>
+
+      <p>Tu música favorita:     
+          <select name="musica" multiple>
+            <option>Cantos gregorianos</option>
+            <option selected>Música tibetana</option>
+            <option>Nueva era</option>
+          </select>
+      </p>
+      <input type="reset"/>
+      <br><br>
+      <input type="submit" value="Enviar" src="images/baby-monkey-4888534_1280.jpg"/>
+    </form>
+ 
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="es"/>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Belén Robles"/>
+  </head>
+  <body>
+   <h1>LISTAS NO ORDENADAS:</h1>
+   
+  <h3>Lista sencilla</h3>
+  <ul>
+    <li>elemento 1</li>
+    <li>elemento 2</li>
+    <li>elemento 3</li>
+  </ul>
+
+  <h3>Elijo viñeta para cada elemento</h3>
+   <ul>
+    <li type="circle">Esto es un tipo de viñeta.</li>
+    <li type="square">Este es otro.</li>
+    <li type="disc">Y este es otro diferente.</li>
+   </ul>
+
+   <h3>Elijo viñeta para todos los elementos</h3>
+   <ul style="list-style-type: circle; color: blue;">
+    <li>Esto es un tipo de viñeta.</li>
+    <li>Este es otro.</li>
+    <li>Y este es otro diferente.</li>
+  </ul>
+
+  <h3>Elijo imagen para viñeta</h3>
+  <ul style="list-style-image:url(icons/triangles-1430105_1280.png);">
+    <li> Primer elemento</li>
+    <li> Segundo elemento</li>
+    <li> Tercer elemento</li>
+  </ul>
+
+  <h1>LISTAS ORDENADAS:</h1>
+  <h3>Elijo los números de orden</h3>
+  <ol>
+    <li value="5">Primer ítem.</li>
+    <li value="50">Segundo ítem.</li>
+    <li value="25">Tercer ítem.</li>
+  </ol>
+
+  <h3>Uso type</h3>
+  
+   <ol start="5">
+    <li>Primer ítem.</li>
+    <li>Segundo ítem.</li>
+    <li>Tercer ítem.</li>
+  </ol>
+
+  <ol type="i" start="5">
+    <li>Primer ítem.</li>
+    <li>Segundo ítem.</li>
+    <li>Tercer ítem.</li>
+  </ol>
+
+  <ol type="I" start="5" reversed>
+    <li>Primer ítem.</li>
+    <li>Segundo ítem.</li>
+    <li>Tercer ítem.</li>
+  </ol>
+
+  <h1>LISTAS ANIDADAS:</h1>
+  <ol>
+    <li value="5">Primer ítem.</li>
+    <li value="50">Segundo ítem.</li>
+    <ol type="I" start="3" reversed>
+      <li>Primer ítem.</li>
+      <li>Segundo ítem.</li>
+      <li>Tercer ítem.</li>
+    </ol>
+    <li value="25">Tercer ítem.</li>
+  </ol>
+
+
+  <h1>LISTAS DE DEFINICIÓN:</h1>
+  <ol>
+    <li>Planetas
+        <dl>
+            <dt>Tierra</dt>
+                <dd>La Tierra es un planeta que gira alrededor del Sol— en la 
+                    tercera órbita más interna.</dd>
+            <dt>Saturno</dt>
+                <dd>El sexto planeta más próximo al Sol, caracterizado por sus  
+                    anillos visibles.</dd>
+        </dl>
+    </li>
+    <li>Satélites
+        <dl>
+            <dt>Luna</dt>
+                <dd>Es el único satélite natural de la Tierra</dd>
+            <dt>Cordelia</dt>
+                <dd>Es el más cercano satélite natural de Urano.</dd>
+        </dl>
+    </li>
+</ol>
+    
+
+  </body>
