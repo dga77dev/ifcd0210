@@ -1,0 +1,48 @@
+header {
+    background-color: #999;
+    margin: 0 auto;
+    width: 500px;
+}
+h1, h3{ 
+    text-align: center; 
+    font-weight: bold;
+}
+
+ul { 
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+.pedido {
+    background-color:brown;
+    width: 250px;
+    margin: 0 auto;
+    border: 5px double black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+li{
+    margin: 5px 5px;
+}
+
+.box {
+    background-color: orange;
+}
+
+/* Posicinamos el boton arriba izquieda de forma fija por si se alarga la lista y hacemos scroll*/
+.eboton {
+    position: fixed;
+    width: 100px;
+    height: 85px;
+    padding: 10px;
+    color: purple;
+    border: 3px solid purple;
+    border-radius: 10px;
+    top: 10vh;
+    left: 10vw;
+}
+.eboton:hover {
+    color: green;
+    border: 3px solid green;
+}
